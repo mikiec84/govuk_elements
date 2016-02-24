@@ -57,7 +57,7 @@ module.exports = function (grunt) {
         expand: true,
         src: '**',
         cwd: 'node_modules/govuk_frontend_toolkit/javascripts/',
-        dest: 'govuk_modules/public/javascripts/'
+        dest: 'public/javascripts/govuk_frontend_toolkit/'
       },
 
       govuk_frontend_toolkit_img: {
