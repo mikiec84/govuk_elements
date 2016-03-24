@@ -53,12 +53,12 @@ module.exports = function (grunt) {
         dest: 'govuk_modules/public/sass/'
       },
 
-      govuk_frontend_toolkit_js: {
-        expand: true,
-        src: '**',
-        cwd: 'node_modules/govuk_frontend_toolkit/javascripts/',
-        dest: 'public/javascripts/govuk_frontend_toolkit/'
-      },
+      // govuk_frontend_toolkit_js: {
+      //   expand: true,
+      //   src: '**',
+      //   cwd: 'node_modules/govuk_frontend_toolkit/javascripts/',
+      //   dest: 'public/javascripts/govuk_frontend_toolkit/'
+      // },
 
       govuk_frontend_toolkit_img: {
         expand: true,
@@ -149,7 +149,7 @@ module.exports = function (grunt) {
     'copy:govuk_assets',
     'convert_template',
     'copy:govuk_frontend_toolkit_scss',
-    'copy:govuk_frontend_toolkit_js',
+    // 'copy:govuk_frontend_toolkit_js',
     'copy:govuk_frontend_toolkit_img',
     'replace',
     'sass',

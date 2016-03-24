@@ -12,6 +12,8 @@ app.set('views', __dirname + '/views');
 // Middleware to serve static assets
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/public'));
+app.use('/public/govuk_frontend_toolkit/javascripts', express.static(__dirname + '/node_modules/govuk_frontend_toolkit/javascripts/'));
+
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
