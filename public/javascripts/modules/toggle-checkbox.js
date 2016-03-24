@@ -11,12 +11,11 @@
             $target = $('#' + target);
 
         $checkbox.attr('aria-controls', target);
-        toggle();
         $checkbox.on('click', toggle);
 
         function toggle() {
           var state = $checkbox.is(':checked');
-          $target.toggle(state);
+          $target.toggleClass('js-hidden');
           setAriaAttr(state)
         }
 

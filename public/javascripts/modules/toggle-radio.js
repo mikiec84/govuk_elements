@@ -18,7 +18,7 @@
 
         function toggle() {
           var state = $radio.is(':checked');
-          $target.toggle(state);
+          $target.toggleClass('js-hidden');
           setAriaAttr(state);
         }
 
